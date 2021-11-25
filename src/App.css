@@ -1,3 +1,15 @@
+.app {
+  padding: 30px;
+  background-color: floralwhite;
+}
+
+.tasks {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
 .App {
   text-align: center;
 }
