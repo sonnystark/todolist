@@ -22,13 +22,13 @@ function Todo({ task, index, markTask, removeTask }) {
 function FormTodo({ addTask }) {
   const [input, setInput] = useState("");
 // store the todo's in localStorage and retrieve them when the page loads. Coming soon.
-  const handleSubmit = event => {
+  function handleSubmit(event) {
     event.preventDefault();
-    if (!input) 
+    if (!input)
       return;
-      addTask(input);
-      setInput("");
-  };
+    addTask(input);
+    setInput("");
+  }
 
   return (
     <Form onSubmit={handleSubmit}>
